@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.header ul {
+  position: relative;
+  display: flex;
+  list-style: none;
+    margin: 0 0px;
+    position: relative;
+  color: #ffffff;
+  padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 12px;
+  position: relative;
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .header ul li{
+    list-style: none;
+  display: inline-block;
+  margin-left: 25px;
+  position: relative;
+  }
+}
+.header ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+
+label {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  z-index: 100;
+}
+
+
+
+/* div:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 75px;
+  height: 38px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+} */
+
+input[type="checkbox"]:checked ~ div {
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.row{
+    background: black;
+    background-color: rgba(0, 0, 0, 0.356);
+    box-shadow: 0 5px 25px 0 
+                rgba(0,0,0,0.25);  
+    text-align: center; 
+    color: #fff;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+html {
+   min-height: 100%;
+   background-image: url(Bike3.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+@media only screen and (min-width: 767px) {
+  html {
+     background-image: url(bikeCopy.jpeg);
+  }
+}
+#logo{
+    width: 120px;
+    margin-right: 0px;
+    left: 50%;
+    cursor: pointer;
+        
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.header {
+    list-style: none;
+    margin: 0 0px;
+    position: relative;
+  color: #ffffff;
+  padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    background: black;
+    background-color: rgba(0, 0, 0, 0.356);
+    box-shadow: 0 5px 25px 0 
+                rgba(0,0,0,0.25);  
+    padding:25px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #262a2c;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+.menu li:hover {
+  background-color: #32357b;
+}
+.menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+.content{
+    top: 90%;
+  
+    text-align: center; 
+    color: #fff;
+}
+
+.content h1{
+    font-size: 30px;
+    background: black;
+    background-color: rgba(0, 0, 0, 0.356);
+    box-shadow: 0 5px 5px 0 
+                rgba(0,0,0,0.25);
+
+    padding: 20px;
+    top: 90%;
+    
+}
+.content p{
+
+    background: black;
+    background-color: rgba(0, 0, 0, 0.356);
+    box-shadow: 0 5px 25px 0 
+                rgba(0,0,0,0.25);
+    padding: 50px 20px 20px 25px;
+    top: 90%;
+    font-weight: 100;
+    line-height: 40px;
+}
+.content a {
+  color: aqua;
+}
+iframe{
+  width: 337px;
+    height: 210px;
+    background-color:rgba(243, 243, 243, 0.371);
+}
+  
+
+@media only screen and (min-width: 767px) {
+  iframe{
+    width:560px;
+     height: 315px;
+  }
+}
+.aside {
+  background-color: #20222300;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer
+ ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    
+    
+ }
+
+#checkout{
+  background-color: #20222300;
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.514), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+  background-color: #20222300;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.social-icon{
+    color: white;
+    transition: color 0.2s;
+    
+}
+
+.social-icon:hover{
+    color:#009620
+}
+ion-icon {
+    height: 50px;
+    width: 50px; 
+    }
+
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="RafterMedia.jpeg" id="logo">
+    
+    <ul>
+        <li>
+          <input type="checkbox" />
+          <div>R</div>
+        </li>
+        <li>
+            <input type="checkbox" />
+            <div>A</div>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <div>F</div>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <div>T</div>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <div>E</div>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <div>R</div>
+          </li>
+        <li>
+          <input type="checkbox" />
+          <div>M</div>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <div>E</div>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <div>D</div>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <div>I</div>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <div>A</div>
+        </li>
+
+      </ul>
+</div>
+
+
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+        <li><a href= "index.html">What we are about</a></li>
+        <li><a href="LogoDesign_responsive.html">Logo designs</a></li>
+        <li><a href="Photography_responsive.html">Photography</a></li>
+        <li><a href = "VideoEdits.html"> Video Edits</a></li>
+    </ul>
+  </div>
+
+  <div class="col-4 content">
+    
+    <h1>Video Edits</h1>
+    <p>   We have been doing video edits for clients since 2017. </p>
+      <a href ="https://youtube.com/shorts/QgQPkGxyBl4?feature=share">Check out are most recent edit here! </a>
+      <p>
+      If you would like any of your video's edit please get in contact with me via the social networks below.
+    </p>
+  </div>
+  <div class = "col-5 right content">
+   
+    <h3 id="checkout"> Check out our other YouTube videos </h3>
+    <iframe  src="https://www.youtube.com/embed/LLGfHBvE5U0" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+  </div>
+
+  <div class="col-3 right">
+    <div class="aside">
+ 
+    </div>
+  </div>
+</div>
+
+<div class = "footer">
+  <ul>
+      <li> <h1>Stay posted, follow us!</h1></li>
+      <li> <a class="social-icon"href="https://www.instagram.com/sourstunts/?hl=en">
+          <ion-icon name="logo-instagram"></ion-icon>
+      </a></li>
+      <li><a class = "social-icon"href="https://api.whatsapp.com/send?phone=%2B447894893226&text&app_absent=0">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+      </a></li>
+      <li><a class = "social-icon"href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+      </li>
+  </ul>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+

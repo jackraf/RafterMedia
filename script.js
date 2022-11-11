@@ -1,3 +1,15 @@
+
+
+if (screen.width > 700) {
+   x = -500
+  } else {
+    x = -300
+  }
+
+// $(window).height();
+// $(window).width();
+
+
 var btn1 = document.getElementById('btn1');
 var btn2 = document.getElementById('btn2');
 var btn3 = document.getElementById('btn3');
@@ -16,21 +28,21 @@ btn2.onclick = function(){
     btn1.style.background = "transparent";
     btn3.style.background = "transparent";
     btn4.style.background = "transparent";
-    slider.style.marginLeft = '-600px';
+    slider.style.marginLeft = x + 'px';
 }
 btn3.onclick = function(){
     this.style.background = 'white';
     btn2.style.background = "transparent";
     btn1.style.background = "transparent";
     btn4.style.background = "transparent";
-    slider.style.marginLeft = '-1200px';
+    slider.style.marginLeft = 2*x + 'px';
 }
 btn4.onclick = function(){
     this.style.background = 'white';
     btn1.style.background = "transparent";
     btn2.style.background = "transparent";
     btn3.style.background = "transparent";
-    slider.style.marginLeft ='-1800px';
+    slider.style.marginLeft = -1500 + 'px';
 }
 
 var btn12 = document.getElementById('btn12');
@@ -65,4 +77,9 @@ btn42.onclick = function(){
     btn12.style.background = "transparent";
     btn22.style.background = "transparent";
     btn32.style.background = "transparent";
+
+var siteWidth = 1280;
+var scale = screen.width /siteWidth;
+
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
 }
